@@ -2,6 +2,11 @@ import './App.css';
 import Feature from "./components/Feature";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
+import State from "./components/State";
+import Colorbox from "./components/Colorbox";
+import Counting from "./components/Counting";
+import Message from "./components/Message";
+import FunctionClick from "./components/FunctionClick";
 function App() {
   return (
     <div className="App">
@@ -24,6 +29,12 @@ function App() {
       </Greet>
 
       <Welcome surname="nguyen" fullname="quang vinh"></Welcome>
+
+      <State />
+      <Colorbox />
+      <Counting />
+      <Message />
+      <FunctionClick />
     </div>
   );
 }
