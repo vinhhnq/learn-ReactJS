@@ -7,7 +7,7 @@ function TodoList() {
 
   const handleAddJob = () => {
     setJobs(prev => {
-      if (job.trim() !== ''){
+      if (job.trim () !== ''){
         const newJobs = [...prev, job];
         const jsonJob = JSON.stringify(newJobs)
         localStorage.setItem('job', jsonJob)
@@ -18,12 +18,10 @@ function TodoList() {
     })
     setJob('')
   }
-
   return (
     <div style={{ padding: 32 }}>
       <input value={job} onChange={e => setJob(e.target.value)}/>
       <button onClick={handleAddJob}>Add</button>
-
       <ul>
         {jobs.map((job, index) => (
           <li key={index}>{job}</li>
